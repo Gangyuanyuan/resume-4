@@ -38,4 +38,15 @@
 	    }
 	    li.classList.add('highlight')
 	}
+
+	let liTags = document.querySelectorAll('nav.menu > ul > li') // 选择器所匹配的所有li标签
+    for(let i=0; i<liTags.length; i++){
+        liTags[i].onmouseenter = function(x){
+            x.currentTarget.classList.add('active')  // currentTarget：监听的元素
+        }
+        liTags[i].onmouseleave = function(x){
+            x.currentTarget.classList.remove('active')
+        }
+    }
+    
 }.call()

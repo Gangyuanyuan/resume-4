@@ -168,9 +168,12 @@
       </ol>
     </section>
     <section data-x id="siteWorks" class="portfolio">
-      <h2>作品集</h2> 
-      <!-- Slider main container -->
-      <div class="swiper-container">
+      <h2>作品集</h2>
+
+      <!-- 这里是view，即用户看的见的东西 -->
+      <div id="mySlides">
+        <!-- Slider main container -->
+        <div class="swiper-container">
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
               <!-- Slides -->
@@ -180,11 +183,12 @@
           </div>
           <!-- pagination -->
           <div class="swiper-pagination"></div>
+        </div>
+        <!-- navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
-      <!-- navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-      
+
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.3.0/Tween.min.js"></script>
