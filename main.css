@@ -258,6 +258,7 @@ section.portfolio{
 	margin-top: 60px;
 }
 section.skills > h2,
+section.message > h2,
 section.portfolio > h2{ 
 	text-align: center;
 	color: #3d4451;
@@ -307,7 +308,8 @@ section.portfolio{
 	margin-bottom: 100px;
 	max-width: 820px;
 }
-section.portfolio h2{
+section.portfolio h2,
+section.message h2{
 	margin-bottom: 32px;
 }
 section.portfolio .swiper-container{
@@ -327,4 +329,15 @@ section.portfolio .swiper-button-next{
 section.portfolio .swiper-button-next{
 	right: auto;
 	left: 100%;
+}
+
+section.message > ol{
+	max-width: 760px;
+	margin: 0 auto;
+	background: #F4F4F4;
+	border-top: 1px solid #DDD;
+}
+section.message > ol > li{
+	padding: 16px 16px;
+	border-bottom: 1px solid #DDD;
 }
