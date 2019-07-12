@@ -36,7 +36,6 @@ h1,h2,h3,h4,h5,h6{ font-weight: normal; }
     align-items: center;
 }
 .site-welcome.active {
-	
     display: flex;   /*弹性盒*/
 }
 .topNavBar{
@@ -131,13 +130,13 @@ h1,h2,h3,h4,h5,h6{ font-weight: normal; }
 }
 .banner{
 	height: 515px;
-	background-image: url(./img/rs-cover.jpg);
+	background-image: url(../img/rs-cover.jpg);
 	background-position: center center;        /*图片居中*/
 	background-size: cover;     /*盖住所有的内容并按比例缩放*/
 }
 .banner .mask{
 	height: 515px;
-	background-color: rgba(0,0,0,0.75);
+	background-color: rgba(0,0,0,0.7);
 }
 .userCard{
 	max-width: 940px;     /*最大宽度不得超过940px*/
