@@ -31,7 +31,7 @@
 	    specialTags[minIndex].classList.remove('offset')
 	    let id = specialTags[minIndex].id
 	    let a = document.querySelector('a[href="#'+ id +'"]')
-	    // id == 'siteAbout'    'a[heref="#siteAbout"]'
+	    // id == 'siteAbout'    'a[href="#siteAbout"]'
 	    let li = a.parentNode
 	    let brothersAndMe = li.parentNode.children
 	    for(let i=0; i<brothersAndMe.length; i++){

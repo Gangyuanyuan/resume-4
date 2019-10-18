@@ -115,6 +115,9 @@ h1,h2,h3,h4,h5,h6{ font-weight: normal; }
 	white-space: nowrap;    /* 不换行 */
 	padding: 5px 10px;
 }
+.topNavBar .submenu > li:hover{
+	background: #F2F2F2;
+}
 .topNavBar .logo{
 	font-size: 24px;
 	font-family: "Arial Black";
@@ -145,7 +148,19 @@ h1,h2,h3,h4,h5,h6{ font-weight: normal; }
 	background-color: #FFFFFF; 
 	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
 }
-.userCard .welcome{
+.userCard .picture{
+	float: left;
+}
+.userCard .picture img{
+	border: 1px solid #ccc;
+	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+}
+.userCard .text{
+	float: left;
+	margin-left: 65px;
+	width: 470px;
+}
+.userCard .text .welcome{
 	background: #E6686A;
 	color: white;
 	display: inline-block;
@@ -163,14 +178,6 @@ h1,h2,h3,h4,h5,h6{ font-weight: normal; }
 	position: absolute;
 	left: 4px;
 	top: 100%;
-}
-.userCard .picture{
-	float: left;
-}
-.userCard .text{
-	float: left;
-	margin-left: 65px;
-	width: 470px;
 }
 .userCard .text h1{
 	margin-top: 20px;
@@ -250,6 +257,8 @@ body > main .selfIntrouduction{
     font-size: 18px;
 }
 section.skills,
+section.message,
+section.contact,
 section.portfolio{
 	max-width: 940px;
 	margin-left: auto;
@@ -258,6 +267,7 @@ section.portfolio{
 }
 section.skills > h2,
 section.message > h2,
+section.contact > h2,
 section.portfolio > h2{ 
 	text-align: center;
 	color: #3d4451;
@@ -304,10 +314,10 @@ section.skills.offset .progress{
 }
 section.portfolio{
 	text-align: center;
-	margin-bottom: 100px;
 	max-width: 820px;
 }
 section.portfolio h2,
+section.contact h2,
 section.message h2{
 	margin-bottom: 32px;
 }
@@ -334,9 +344,46 @@ section.message > ol{
 	max-width: 760px;
 	margin: 0 auto;
 	background: #F4F4F4;
-	border-top: 1px solid #DDD;
+	border-radius: 5px;
+	padding: 30px;
+	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
 }
 section.message > ol > li{
 	padding: 16px 16px;
 	border-bottom: 1px solid #DDD;
+}
+section.message form > label{
+	color: #E6686A;
+}section.message > form > input:not(:last-child){
+	margin-right: 30px;
+}
+section.message form > .button{
+	background: #E6686A;
+	padding: 3px 5px;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+}
+section.contact > .wrapper{
+	border-radius: 5px;
+	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.5);
+	background: #fff;
+	padding: 30px 60px;
+	margin-bottom: 160px;	
+}
+section.contact > .wrapper > img{
+	float: left;
+}
+section.contact > .wrapper > ul{
+	float: left;
+	margin-left: 80px;
+}
+.wrapper ul li{
+	padding: 8px;
+}
+.wrapper ul li .ask{
+	font-weight: bold;
+}
+.wrapper ul li .answer{
+	color: #999;
 }
